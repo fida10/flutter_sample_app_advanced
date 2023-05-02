@@ -10,6 +10,7 @@
 .svn/
 migrate_working_dir/
 *.png
+*.metadata
 
 # IntelliJ related
 *.iml
@@ -43,3 +44,14 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# other paths to ignore
+/android
+/ios
+/linux
+/macos
+/test
+/web
+/windows
+pubspec.lock
+
