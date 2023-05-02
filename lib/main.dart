@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) =>
           MyAppState(), //application global items, callable via context
-      //stuff like "theme", fonts, colors, etc. can be defined here
+      //stuff like "theme", fonts, colors, etc. can be defined
       child: MaterialApp(
         title: 'Namer App',
-        theme: ThemeData(
+        theme: ThemeData( //this is themedata
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueGrey),
         ),
@@ -30,5 +30,14 @@ class MyApp extends StatelessWidget {
 }
 
 class MyAppState extends ChangeNotifier {
-  
+  var current = WordPair.random();
+  var history = <WordPair>[];
+
+
+  var favorites = <WordPair>[];
+
+  void removeFavorite(WordPair pair) {
+    favorites.remove(pair);
+    notifyListeners();
+  }
 }
