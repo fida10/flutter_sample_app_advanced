@@ -59,22 +59,7 @@ class MyAppState extends ChangeNotifier {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //shakil  home work1
-
-
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -175,22 +160,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // shakil home work2
-
 
 class GeneratorPage extends StatelessWidget {
   @override
@@ -206,55 +176,32 @@ class GeneratorPage extends StatelessWidget {
     }
 
     return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          
-          SizedBox(height: 10),
-          
-          SizedBox(height: 10),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              ElevatedButton.icon(
-                onPressed: () {
-                  appState.toggleFavorite();
-                },
-                icon: Icon(icon),
-                label: Text('Like'),
-              ),
-              SizedBox(width: 10),
-              ElevatedButton(
-                onPressed: () {
-                  appState.getNext();
-                },
-                child: Text('Next'),
-              ),
-            ],
-          ),
-          Spacer(flex: 2),
-        ],
-      ),
-    );
+        child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        SizedBox(height: 10),
+        SizedBox(height: 10),
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ElevatedButton.icon(
+              onPressed: () {
+                appState.toggleFavorite();
+              },
+              icon: Icon(icon),
+              label: Text('Like'),
+            ),
+            SizedBox(width: 10),
+            ElevatedButton(
+              onPressed: () {
+                appState.getNext();
+              },
+              child: Text('Next'),
+            ),
+          ],
+        ),
+        Spacer(flex: 2),
+      ],
+    ));
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
