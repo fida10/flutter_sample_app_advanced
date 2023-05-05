@@ -97,6 +97,8 @@ class BigCard extends StatelessWidget {
   }
 }
 
+// added list
+
 class FavoritesPage extends StatelessWidget {// FavoritesPage নতুন একটি স্টেটলেস উইজেট।
   @override
   Widget build(BuildContext context) {// conts এর অর্থ হলো একদম আটকে দেওয়া। যার মান কোন সময় পরিবর্তন করা যায় না।
