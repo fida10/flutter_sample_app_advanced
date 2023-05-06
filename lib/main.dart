@@ -57,8 +57,6 @@ class MyAppState extends ChangeNotifier {
   }
 }
 
-//shakil  home work11
-
 class MyHomePage extends StatefulWidget {
   // jode widget er modde poriborthon ba onek kisu add korrte chai tahole StatefulWidget use kori
   @override
@@ -180,8 +178,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-// shakil home work2
-
 class GeneratorPage extends StatelessWidget {
   //Stateless widget ja nirdisto /const kore rakhar jonno
   @override
@@ -238,3 +234,4 @@ class GeneratorPage extends StatelessWidget {
     ));
   }
 }
+// ok add for pull request
